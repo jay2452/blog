@@ -14,7 +14,8 @@
   <div id="main" class="container-fluid">
     <b>Content</b><br><br>
     <% @blogs.each do |blog| %>
-      <%= blog.content %> <br> <hr>
+      <%= blog.content %> <br>
+      <%= link_to "docs", blog.docs.url if blog.docs? %><br> <hr>
     <% end -%>
   </div>
 </div>

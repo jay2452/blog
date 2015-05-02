@@ -11,14 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150501123611) do
+ActiveRecord::Schema.define(version: 20150502111952) do
 
   create_table "blogs", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.integer  "user_id"
+    t.string   "docs_file_name"
+    t.string   "docs_content_type"
+    t.integer  "docs_file_size"
+    t.datetime "docs_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

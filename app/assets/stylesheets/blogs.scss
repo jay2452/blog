@@ -1,0 +1,24 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#content {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+#title {
+	width: 180;
+	float: left;
+}
+
+#main {
+	width: 700px;
+	float: right;
+}
+
+#new_blog {
+	clear: both;
+}

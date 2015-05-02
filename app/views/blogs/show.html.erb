@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
+
+<p>
+	<strong>Content:</strong>
+	<div class="container">
+		<div class="col-xs-9">
+			<%= @blog.content %>
+		</div>
+	</div>
+</p>
+<% if can? :update, @blog %>
+	<%= link_to 'Edit', edit_blog_path(@blog) %> </br>
+	<%= link_to 'Destroy', @blogs, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %><br>
+<% end %>
+<%= link_to 'Back', blogs_path %> </br>
+

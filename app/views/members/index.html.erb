@@ -1,0 +1,5 @@
+<h2>Members List</h2>
+
+<% @members.each do |member| %>
+	<%= link_to "#{member.name}" %> | <%= member.email %> <br>
+<% end %>

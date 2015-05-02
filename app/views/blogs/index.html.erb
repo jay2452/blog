@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Blogs</h1>
+<%= link_to 'New Blog', new_blog_path, class: "btn btn-primary" %>
+<div id="content">
+  <div id="title">
+    <b align="center">Title</b> </br></br>
+    <% @blogs.each do |blog| %>
+      <%= link_to "#{blog.title}", blog %> <br>
+      <%= blog.user.email %> <br>
+      <hr>
+    <% end -%>    
+  </div>
+  <div id="main">
+    <b>Content</b><br><br>
+    <% @blogs.each do |blog| %>
+      <%= blog.content %> <br> <hr>
+    <% end -%>
+  </div>
+</div>
+  
+
+<br>
+<!--div id="new_blog"
+  <%= link_to 'New Blog', new_blog_path, class: "btn btn-primary" %>
+</div> 
+-->
+

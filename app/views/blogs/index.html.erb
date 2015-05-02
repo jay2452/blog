@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Blogs</h1>
-<%= link_to 'New Blog', new_blog_path, class: "btn btn-primary" %>
+<%= link_to 'New Blog', new_blog_path, class: "btn btn-success" %>
 <div id="content">
-  <div id="title">
+  <div id="title" class="container-fluid">
     <b align="center">Title</b> </br></br>
     <% @blogs.each do |blog| %>
       <%= link_to "#{blog.title}", blog %> <br>
@@ -11,7 +11,7 @@
       <hr>
     <% end -%>    
   </div>
-  <div id="main">
+  <div id="main" class="container-fluid">
     <b>Content</b><br><br>
     <% @blogs.each do |blog| %>
       <%= blog.content %> <br> <hr>

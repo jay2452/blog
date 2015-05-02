@@ -1,6 +1,11 @@
 // Place all the styles related to the blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#body1 {
+	background-color: #81F7F3;
+	background-image: url(bk.jpg);
+}
+
 
 #content {
 	width: 1000px;
@@ -12,11 +17,13 @@
 #title {
 	width: 180;
 	float: left;
+	background-color: #FAAC58;
 }
 
 #main {
 	width: 700px;
 	float: right;
+	background-color: #FAAC58;
 }
 
 #new_blog {
